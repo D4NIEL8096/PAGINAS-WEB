@@ -1,0 +1,658 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALITO DE ARTE EN MADERA BALSA</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos3d.css">
+    <link rel="stylesheet" href="DataTables/datatables.min.css">
+</head>
+
+<body>
+
+    <!--ICONOS FLOTANTES-->
+    <div class="floating-icons bg-white rounded-2 p-2">
+        <a title="YouTube" data-bs-toggle="tooltip" data-bs-placement="bottom" href="#"><i class="fa fa-youtube-square fa-2x text-danger" aria-hidden="true"></i>
+        </a>
+        <a title="Instagram" data-bs-toggle="tooltip" data-bs-placement="bottom" href="#"><i class="fa fa-instagram fa-2x text-secondary" aria-hidden="true"></i>
+        </a>
+        <a title="Twitter" data-bs-toggle="tooltip" data-bs-placement="bottom" href="#"><i class="fa fa-twitter-square fa-2x text-primary" aria-hidden="true"></i>
+        </a>
+        <a title="Facebook" data-bs-toggle="tooltip" data-bs-placement="bottom" href="#"><i class="fa fa-facebook-square fa-2x text-primary" aria-hidden="true"></i>
+        </a>
+        <a title="Whatsapp" data-bs-toggle="tooltip" data-bs-placement="bottom" href="#"><i class="fa fa-whatsapp fa-2x text-success" aria-hidden="true"></i>
+        </a>
+    </div>
+    
+    <!--SECCIÓN NAVBAR-->
+    <nav class="navbar navbar-expand-md fondo fixed-top bg-info">
+        <div class="container-fluid">
+            <!--TÍTULO/LOGO/IMAGEN-->
+            <a class="navbar-brand text-white" style="font-size: 25px;" href="#">
+                <img src="images/logotipo.PNG" alt="" width="50px">
+                PALITO DE ARTE EN MADERA BALSA
+                
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--OPCIONES DEL NAVBAR-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    
+                    <!--opcion inicio-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    <!--opcion promociones-->
+                    <li class="nav-item">
+                        <a href="#promociones" class="nav-link active">
+                            <i class="fa fa-bomb" aria-hidden="true"></i>
+                            Promociones
+                        </a>
+                    </li>
+
+                    <!--FOTOS 3D-->
+                    <li class="nav-item">
+                        <a href="#fotos3d" class="nav-link active">
+                            <i class="fa fa-cube" aria-hidden="true"></i>
+                            FOTOS 3D
+                        </a>
+                    </li>
+
+                    <!--FORMULARIO-->
+                    <li class="nav-item">
+                        <a href="#formulario" class="nav-link active">
+                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                            Formulario
+                        </a>
+                    </li>                    
+
+                    <!--OPCION egresos-->
+                    <li class="nav-item">
+                        <a href="#egresos" class="nav-link ">
+                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                            Egresos
+                        </a>
+                    </li> 
+
+                    <!--OPCION FOTOS-->
+                    <li class="nav-item">
+                        <a href="#fotografias" class="nav-link ">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                            Fotografias
+                        </a>
+                    </li>
+
+                    <!--TABLA-->
+                    <li class="nav-item">
+                        <a href="#tabla" class="nav-link active">
+                            <i class="fa fa-table" aria-hidden="true"></i>
+                            TABLA
+                        </a>
+                    </li>   
+
+                    <!--SWITCH-->
+                    <li class="nav-item">
+                        <a href="#foco" class="nav-link " data-bs-toggle="modal" data-bs-target="#focoModal">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            FOCO
+                        </a>
+                    </li>  
+                  
+                </i>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!--SECCIÓN CAROUSEL-->
+  <div id="carouselVAR" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+        <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+        <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/fondo1.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Primer Título del Texto</h5>
+                <p>Texto corto correspondiente al primer texto.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/fondo2.jpg" class="d-block w-100"  style="height: 100vh;"alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Segundo Título del Texto</h5>
+                <p>Texto corto correspondiente al primer texto.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/fondo3.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Tercer Título del Texto</h5>
+                <p>Texto corto correspondiente al primer texto.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVAR" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselVAR" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
+    <!--OPCIONES DE NAVBAR EGRESOS-->
+    <div class="container pantalla-completa" id="egresos">
+        <div class="row">
+            <div class="col-sm-12 col-xl-6">
+                <h1 class="text-danger">BIENVENIDO AL MODULO DE EGRESOS</h1>
+                <p>En este espacio debe colocar todas las acciones del boton egresos, tome en cuenta que de ser necesario debe colocar un boton de retorno.</p>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+                <h4>SECCION DERECHA DE EGRESOS</h4>
+                <p>EN ESTA SECCION UBICADA EN LA PARTE DERECHA SE DEBE COLOCAR INDICACIONES REFERECTES AL PROCESO DE EGRESOS MEDIANTE BOTONES INFORMATIVOS.</p>
+            </div>
+            <a href="#carouselVAR" class="btn btn-primary"> Regresar</a>
+        </div>
+    </div>
+
+    <!--OPCIONES NAVBAR FOTOGRAFIA-->
+    <div class="container pantalla-completa" id="fotografias">
+        <div class="row">
+
+            <!--FOTOGRAFIA 5-->
+            <div class="col-12 col-sm-6">
+                <div class="image-container">
+                    <img src="images/fondo5.jpg" class="img-fluid rounded-5" alt="">
+                    <div class="overlay">
+                        <h3>LLAVEROS</h3>
+                        <p class="p-3">Llaveros de loro y tucan en madera balsa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--FOTOGRAFIA 6-->
+            <div class="col-12 col-sm-6">
+                <div class="image-container">
+                    <img src="images/fondo6.jpg" class="img-fluid rounded-5" alt="">
+                    <div class="overlay">
+                        <h3>LOROS</h3>
+                        <p class="p-3">Loros de 5cm de alto en madera balsa.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--SECCION ACORDEON-->
+    <div class="container" id="promociones" style="height: 100vh;">  
+        <div class="accordion">
+
+            <!--ACORDION UNO-->
+          <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno" style="margin-top: 10px;">
+                    Promoción del dia
+                   </button>
+               </h2>
+          </div>
+            <div id="collapseUno" class="accordion-collapse collapse text-success" data-bs-parent="#promociones">
+              <div class="accordion-body">
+                <strong>Semana de locura:</strong>lleve dos productos de cualquier marco y el terceropaga la mitad
+
+                <!--INCLUSION DE FOTOGRAFIAS-->
+                <div class="container mt-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 1 O FOTOGRAFIA 1-->
+                            <div class="card">
+                                <img src="images/fondo11.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografia.</p>
+                                </div>
+                                <div class="card-footer" style="text-align: right;">
+                                    <a data-bs-toggle="modal" data-bs-target="#miVentanaModal" href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 2 O FOTOGRAFIA 2-->
+                            <div class="card">
+                                <img src="images/fondo12.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografia.</p>
+                                </div>
+                                <div class="card-footer" style="text-align: right;">
+                                    <a href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 3 O FOTOGRAFIA 3-->
+                            <div class="card">
+                                <img src="images/fondo13.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografia.</p>
+                                </div>
+                                <div class="card-footer" style="text-align: right;">
+                                    <a href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 4 O FOTOGRAFIA 4-->
+                            <div class="card">
+                                <img src="images/fondo14.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografia.</p>
+                                </div>
+                                <div class="card-footer" style="text-align: right;">
+                                    <a href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!--ACORDION DOS-->
+          <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos" style="margin-top: 10px;">
+                     PADRES
+                  </button>
+               </h2>
+          </div>
+            <div id="collapseDos" class="accordion-collapse collapse text-secondary" data-bs-parent="#promociones">
+              <div class="accordion-body">
+                <strong> PADRES: </strong>PEÑAFIEL CHICAISA MEDARDO ADRIAN, ENRIQUEZ SALAZAR IRMA DORIZA
+              </div>
+            </div>
+
+            <!--ACORDION Tres-->
+          <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres" style="margin-top: 10px;">
+                     HERMANOS
+                  </button>
+               </h2>
+          </div>
+            <div id="collapseTres" class="accordion-collapse collapse text-primary" data-bs-parent="#promociones">
+              <div class="accordion-body">
+                <strong>HERMANOS: </strong>PEÑAFIEL ENRIQUEZ JHONNY GABRIEL, PEÑAFIEL ENRIQUEZ ADRIANA JOSELYN, PEÑAFIEL ENRIQUEZ EVELYN ALEXANDRA, PEÑAFIEL ENRIQUEZ JORDY DANIEL
+              </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--SECCION FOTOS 3D-->
+    <div class="container-fluid pantalla-completa" id="#fotos3d" style="height: 100vh;">
+        <div class="content-all">
+            <div class="content-carousel">
+                <figure><div class="texto">PALITO DE ARTE EN MADERA BALSA</div><img class="rounded" src="images/fondo11.jpg" alt=""></figure>
+                <figure><div class="texto">FOTOGRAFIA 2 </div><img class="rounded" src="images/fondo12.jpg" alt=""></figure>
+                <figure><div class="texto">FOTOGRAFIA 3 </div><img class="rounded" src="images/fondo13.jpg" alt=""></figure>
+                <figure><div class="texto">FOTOGRAFIA 4 </div><img class="rounded" src="images/fondo14.jpg" alt=""></figure>
+                <figure><div class="texto">PALITO DE ARTE EN MADERA BALSA</div><img class="rounded" src="images/fondo11.jpg" alt=""></figure>
+
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION FORMULARIO-->
+    <div class="container-fluid pantalla-completa bg-secondary" id="formulario">
+        <form action="" method="post">
+            <div class="row p-2">
+                <h2 class="text-center text-white">REGISTRO DE INFORMACIÓN</h2>
+
+                <!--PARTE IZQUIERDA-->
+                <div class="col-12 col-md-6 col-lg-6 bg-white p-5">
+                  <div class="input-group mb-3">
+                      <label for="nombre" class="input-group-text text-dark" ><i class="fa fa-user fa-2x" aria-hidden="true"></i><strong> NOMBRE:</strong> </label>
+                      <input type="text" name="nombre" id="nombre" class="form-control bg-light-blue" placeholder="Ingrese nombres completos" size="60" required>
+                  </div>
+                   <div class="input-group mb-3">
+                     <label for="apellido" class="input-group-text text-dark" ><i class="fa fa-user fa-2x" aria-hidden="true"></i><strong> APELLIDO:</strong> </label>
+                     <input type="text" name="apellido" id="apellido" class="form-control bg-light-blue" placeholder="Ingrese apellidos completos" size="60" required>
+                   </div>
+
+
+                   <div class="input-group mb-3">
+                      <label for="direccion" class="input-group-text text-dark" ><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><strong> DIRECCIÓN:</strong> </label>
+                      <input type="text" name="direccion" id="direccion" class="form-control bg-light-blue" placeholder="Ingrese su dirrección" size="60" required>
+                   </div>
+                   <div class="input-group mb-3">
+                      <label for="barrio" class="input-group-text text-dark" ><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><strong> BARRIO:</strong> </label>
+                      <input type="text" name="barrio" id="barrio" class="form-control bg-light-blue" placeholder="Ingrese su barrio" size="60" required>
+                   </div>
+                   <div class="input-group mb-3">
+                      <label for="sector" class="input-group-text text-dark" ><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><strong> SECTOR:</strong> </label>
+                      <input type="text" name="sector" id="sector" class="form-control bg-light-blue" placeholder="Ingrese su sector" size="60" required>
+                   </div>
+                   <div class="input-group mb-3">
+                    <label for="email" class="input-group-text text-dark" ><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><strong> EMAIL:</strong> </label>
+                    <input type="text" name="email" id="email" class="form-control bg-light-blue" placeholder="Ingrese su email" size="60" required>
+                 </div>
+                 <div class="input-group mb-3">
+                    <label for="estado" class="input-group-text text-dark" ><i class="fa fa-venus-mars fa-2x" aria-hidden="true"></i><strong> ESTADO CIVIL:</strong> </label>
+                    <input type="text" name="estado" id="estado" class="form-control bg-light-blue" placeholder="Ingrese su estado civil" size="60" required>
+                 </div>
+                 <div class="input-group mb-3">
+                    <label for="nacionalidad" class="input-group-text text-dark" ><i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i><strong> NACIONALIDAD:</strong> </label>
+                    <input type="text" name="nacionalidad" id="nacionalidad" class="form-control bg-light-blue" placeholder="Ingrese su nacionalidad" size="60" required>
+                 </div>                 
+                 <div class="input-group mb-3">
+                    <label for="sangre" class="input-group-text text-dark" ><i class="fa fa-tint fa-2x" aria-hidden="true"></i><strong> TIPO DE SANGRE:</strong> </label>
+                    <input type="text" name="sangre" id="sangre" class="form-control bg-light-blue" placeholder="Ingrese su tipo de sangre" size="60" required>
+                 </div>
+
+                 <div class="input-group mb-3">
+                    <label for="genero" class="input-group-text text-dark" ><i class="fa fa-male fa-2x" aria-hidden="true"></i><i class="fa fa-female fa-2x" aria-hidden="true"></i><strong> TIPO DE GÉNERO:</strong> </label>
+                    <input type="text" name="genero" id="genero" class="form-control bg-light-blue" placeholder="Ingrese su tipo de genero" size="60" required>
+                 </div>
+
+                </div>
+
+
+                <!--PARTE DERECHA-->
+                <div class="col-12 col-md-6 col-lg-6 bg-info p-5">
+                    <div class="input-group mb-3">
+                        <label for="fecha" class="input-group-text text-danger"> <strong> Fecha de nacimiento:</strong> </label>
+                        <input type="date" name="fecha" id="fecha" class="form-control bg-light-blue" required >
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="edad" class="input-group-text text-danger"> <strong>EDAD:</strong> </label>
+                        <input type="number" name="edad" id="edad" class="form-control bg-light-blue" readonly >
+                    </div>
+
+                    <!--GENERO-->
+                    <div class="input-group mb-3">
+                        <label for="genero" class="input-group-text text-primary"> <strong>Género:</strong> </label>
+                        <select name="genero" id="genero" required>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+                    
+                    <!--PROVINCIA-->
+                    <div class="input-group mb-3">
+                        <label for="provincia" class="input-group-text text-primary"> <strong>Provincia:</strong> </label>
+                        <select name="provincia" id="provincia" required>
+                            <!--javascript cantones-->
+
+                        </select>
+                    </div>
+                    <!--CANTONES-->
+                    <div class="input-group mb-3">
+                        <label for="canton" class="input-group-text text-primary"> <strong>Cantón:</strong> </label>
+                        <select name="canton" id="canton" required>
+                            <!--javascript cantones-->
+                        </select>
+                    </div>
+
+                </div>
+
+                <!--BOTONES DEL FORMULARIO-->
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-save fa-2x"></i>
+                    Guardar   
+                    </button>
+                    <button type="button" class="btn btn-danger" onclick="window.location.href='indext.html';">
+                    <i class="fa fa-close fa-2x"></i>
+                    Cerrar
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--SECCION TABLA-->
+    <div class="container-fluid  pantalla-fluid" id="tabla" style="height: 100vh;" >
+        <div class="row">
+            <div class="col-12 col-sm-2 col-xl-2 bg-dark rounded">
+                <h1 class="text-danger text-center">USO DE TABLAS</h1>
+                <p>El uso de las tablas son necesarias para organizar información, especialmente cuando se tabaje con una base de datos.</p>
+            </div>
+            <div class="col-12 col-sm-10 col-xl-10 bg-secondary rounded p-2">
+                <div class="table-responsive">
+                    <table class="table-responsive table-bordered w-100" id="tabla1">
+                        <thead >
+                            <tr>
+                                <th>HORA</th>
+                                <th>LUNES</th>
+                                <th>MARTES</th>
+                                <th>MIÉRCOLES</th>
+                                <th>JUEVES</th>
+                                <th>VIERNES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 7:00-7:40</td>
+                                <td>FÍSICA</td>
+                                <td>DISEÑO Y DESARROLLO WEB</td>
+                                <td>EDUCACION PARA LA CIUDADANIA</td>
+                                <td>EMPRENDIMIENTO Y GESTION</td>
+                                <td>MATEMÁTICAS</td>
+                            </tr>
+
+                            <tr>
+                                <td>2 7:40-8:20</td>
+                                <td>FÍSICA</td>
+                                <td>DISEÑO Y DESARROLLO WEB</td>
+                                <td>EDUCACION PARA LA CIUDADANIA</td>
+                                <td>EMPRENDIMIENTO Y GESTION</td>
+                                <td>MATEMÁTICAS</td>
+                            </tr>   
+                            <tr>
+                                <td>3 8:20-9:00</td>
+                                <td>LENGUA Y LITERATURA</td>
+                                <td>DISEÑO Y DESARROLLO WEB</td>
+                                <td>ACOMPAÑAMIENTO AULA</td>
+                                <td>SISTENAS OPERATUVIS Y REDES</td>
+                                <td>SOPORTE TECNICO</td>
+                            </tr>
+                            <tr>
+                                <td>4 9:00-9:40 </td>
+                                <td>LENGUA Y LITERATURA</td>
+                                <td>HISTORIA</td>
+                                <td>SISTENAS OPERATUVIS Y REDES</td>
+                                <td>SISTENAS OPERATUVIS Y REDES</td>
+                                <td>SOPORTE TECNICO</td>                               
+                            </tr>
+                            <tr>
+                                <td>5 9:40-10:20</td>
+                                <td>PROGRAMACION Y BASE DE DATOS</td>
+                                <td>LENGUA Y LITERATURA</td>
+                                <td>MATEMÁTICAS</td>
+                                <td>FILOSOFIA</td>
+                                <td>INGLÉS</td>
+                            </tr>  
+                            <tr>
+                                <td> 10:20-11:00</td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>RECREO</strong> </td>
+                                <td></td>
+                                <td></td
+                            </tr>
+                        
+                            <tr>
+                                <td>6 11:00-11:40</td>
+                                <td>PROGRAMACION Y BASE DE DATOS</td>
+                                <td>LENGUA Y LITERATURA</td>
+                                <td>EDUCACION CULTURAL ARTISTICA</td>
+                                <td>FILOSOFIA</td>
+                                <td>INGLÉS</td>
+                            </tr>
+                            
+                          
+                            <tr>
+                                <td>7 11:40-12:20</td>
+                                <td>QUÍMICA</td>
+                                <td>EDUCACION FISICA</td>
+                                <td>EDUCACION CULTURAL ARTISTICA</td>
+                                <td>PROGRAMACION Y BASE DE DATOS</td>
+                                <td>BIOLOGIA</td>
+                            <tr>
+                          
+                             
+                            </tr>
+                                <td>8 12:20-13:00</td>
+                                <td>QUÍMICA</td>
+                                <td>EDUCACION FISICA</td>
+                                <td>INGLÉS</td>
+                                <td>PROGRAMACION Y BASE DE DATOS</td>
+                                <td>BIOLOGIA</td>                                   
+                            </tr>                                                                                                             
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MI VENTANA MODAL 1-->
+    <div class="modal fade" id="miVentanaModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false ">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--ENCABEZADO/HEAD MODAL-->
+                <div class="modal-header">
+                    <h5 class="modal-tittle text-dark" id="ModalLabel">VENTANA MODAL 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <!--CUERPO/BODY MODAL-->
+                <div class="modal-body text-dark">
+                    <p><i class="fa fa-check fa-3x" aria-hidden="true"></i>Su origen es que son echos de madera de balsa</p>
+                    <p><i class="fa fa-check fa-3x" aria-hidden="true"></i>La madera de basa proviene de santo domingo</p>
+                 </div>
+                <!--PIE/FOOTER MODAL-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+
+ 
+
+        </div>
+
+    </div>
+    <!---->
+    <div class="modal fade" id="focoModal" tabindex="-1" aria-labelledby="focoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--ENCABEZADO-->
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="focoModalLabel">INTERRUPTOR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <!--CUERPO-->
+                <div class="modal-body">
+                    <div class="digital-switch" onclick="toggleSwitch(this)">
+                        <i class="fa fa-lightbulb-o text-dark"></i>
+                        <span class="text text-dark text-center ">Apagado</span>
+                    </div>
+                    <br>
+                    <div class="text-center text-dark" id="foco"></div>
+                </div>
+                <!--PIE-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--PROPIEDADES PARA TOOLTIP-->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltiplList = tooltipTriggerList.map(function(tooltipTriggerE1){
+            return new bootstrap.Tooltip(tooltipTriggerE1)
+        })
+    </script>
+
+    <!--LIBRERIAS JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/provincias-cantones.js"></script>
+    <script src="js/edad.js"></script>
+
+   <!--LIBRERIAS JS PARA TABLAS-->
+    <script src="DataTables/jquery-3.7.1.min.js"></script>  
+    <script src="DataTables/datatables.min.js"></script>
+
+
+
+    <!--PROPIEDADES DE DATATABLES Y JQUERY-->
+    <script>
+    $(document).ready(function(){
+        $('#tabla1').DataTable({
+            scrollY: '150px',
+            scrollX: true,
+            scrollCollapse: true,
+            paging: true,
+            bFilter: true,
+            bInfo: false,
+            ordering: true,
+            language: {
+                info: 'Mostrando _START_ a _END_ de _TOTAL_ Entradas',
+                infoFiltered: '(Filtrando de _MAX_ total entradas)',
+                lengthMenu:'Vsualizar _MENU_ registros',
+                search: 'Buscar',
+                paginate: {
+                    first:'Primero',
+                    last: 'Último',
+                    next: 'Siguiente',
+                    previous: 'Anterior',
+                }
+            }
+
+        });
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
